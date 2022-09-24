@@ -5,25 +5,32 @@ class ContainerPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      height: 200,
-      width: 200,
-      // color: Colors.red,
-      decoration: BoxDecoration(
-        color: Colors.red,
-        borderRadius: BorderRadius.circular(30),
-        boxShadow: const [
-          BoxShadow(
-            color: Colors.black,
-            blurRadius: 20,
-            offset: Offset(10, 10),
-          )
-        ],
+    return Scaffold(
+      appBar: AppBar(
+        title: Text("Exemplo de container"),
       ),
-      margin: const EdgeInsets.all(10),
-      padding: const EdgeInsets.all(60),
-      child: Container(
-        color: Colors.blue,
+      body: Center(
+        child: Container(
+          height: 200,
+          width: 200,
+          // color: Colors.red,
+          decoration: BoxDecoration(
+            color: Colors.red,
+            borderRadius: BorderRadius.circular(30),
+            boxShadow: const [
+              BoxShadow(
+                color: Colors.black,
+                blurRadius: 20,
+                offset: Offset(10, 10),
+              )
+            ],
+          ),
+          margin: const EdgeInsets.all(10),
+          padding: const EdgeInsets.all(60),
+          child: Container(
+            color: Colors.blue,
+          ),
+        ),
       ),
     );
   }
